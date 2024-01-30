@@ -1,2 +1,12 @@
-# Pagina-de-Apresentacao
-Repositório em que conto um pouco mais sobre minha pessoa e meus objetivos.
+
+# Site de apresentação.
+
+Site bem simples onde me apresento com minha trajetória e objetivos.
+
+
+
+
+## Stack utilizada
+
+**Front-end:** Html, Css
+
