@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+  
+    --cor-primaria: #7895B2;
+    --cor-secundaria:#F5EFE6;
+    --cor-terciaria: #E8DFCA;
+    --cor-texto-midias: #AEBDCA;
+    --cor-hover: #F5EFE6;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh;   utilizado como guia inicial para olharmos o fim da página, agora sem necessidade  */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+   
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    /* UNIDADE DE MEDIDA REM - UTILIZADA PARA DEFINIR O TAMANHO DOS ELEMENTOS EM RELAÇÃO AO TAMANHO DO NAVEGADOR OU
+    DISPOSITIVO EM QUE ESTÁ VISUALIZANDO A PÁGINA.
+    Utilizando a unidade de medida em rem, caso esteja em px, podemos pegar o valor em px e dividir por 16,
+    o resultado podemos utilizar como medida para o rem. Exemplo 36/16 = 2.25 rem */
+font-size: 2.25rem;
+font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+.apresentacao__links__navegacao{    
+    /* background: #22D4FD; */
+    display: flex;
+    gap: 16px;
+    justify-content:center;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    border-radius: 16px;
+    padding: 16px 0;
+    text-decoration: none;  /*tira o sublinhado padão do texto*/
+    color: var(--cor-texto-midias);
+    border-radius: 8px;
+border: 2px dotted var(--cor-terciaria);
+}
+.apresentacao__links__navegacao:hover{
+    background-color: var(--cor-hover);
+}
+
+.apresentacao_imagem{
+    width: 40%;
+}
+
+.rodape{
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-terciaria);
+    background-color:var(--cor-texto-midias);
+    padding: 20px;
+}
+
+/* ****MEDIA**** */
+
+@media(max-width: 1200px){
+    .cabecalho{
+    padding: 10% 0% 2% 0%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+        
+    }
+
+    .cabecalho__menu__link{
+        font-size: 2.5rem;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
